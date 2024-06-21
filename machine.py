@@ -321,7 +321,7 @@ def simulation(code, memory, input_tokens, data_memory_size, limit):
     return "".join(data_path.output_buffer), instr_counter
 
 
-def main():
+def main(code_file, input_file):
     code, memory = read_from_json(code_file)
     with open(input_file, encoding="utf-8") as file:
         input_text = file.read()
