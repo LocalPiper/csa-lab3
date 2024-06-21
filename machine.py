@@ -291,6 +291,35 @@ class ControlUnit:
 
         return "{} \t{}".format(state_repr, instr_repr) 
 
+def simulation(code, memory, input_tokens, data_memory_size, limit):
+    data_path = DataPath(data_memory_size, input_tokens)
+    for data in memory:
+        data_path.data_memory[int(data[0])] = int(data[1])
+    control_unit = ControlUnit(code, data_path, limit)
+    for command in code:
+        if(command[2] == ""):
+            control_unit.instruction_memory[int(command[0])] = Command(Opcode(command[1]))
+        else:
+            control_unit.instruction_memory[int(command[0])] = Command(Opcode(command[1]), command[2])
+    instr_counter = 0
+
+    logging.debug("%s", control_unit)
+    try:
+        while instr_counter < limit:
+            control_unit.decode_and_execute_instruction()
+            instr_counter += 1
+            logging.info("TOS: %s", data_path.tos)
+            logging.info("STACK: %s", data_path.data_stack)
+            logging.debug("%s", control_unit)
+    except StopIteration:
+        pass
+
+    if instr_counter >= limit:
+        logging.warning("Limit exceeded!")
+
+    logging.info("output_buffer: %s", repr("".join(data_path.output_buffer)))
+    return "".join(data_path.output_buffer), instr_counter
+
 
 def main():
     code, memory = read_from_json(code_file)
