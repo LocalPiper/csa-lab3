@@ -293,7 +293,24 @@ class ControlUnit:
 
 
 def main():
-    pass
+    code, memory = read_from_json(code_file)
+    with open(input_file, encoding="utf-8") as file:
+        input_text = file.read()
+        input_token = []
+        for char in input_text:
+            input_token.append(char)
+
+    output, instr_counter = simulation(
+        code,
+        memory,
+        input_tokens=input_token,
+        data_memory_size=300,
+        limit=30,
+    )
+
+    print("".join(output))
+    print("instr_counter: ", instr_counter)
+
 
 
 if __name__ == "__main__":
