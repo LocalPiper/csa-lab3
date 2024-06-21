@@ -314,4 +314,7 @@ def main():
 
 
 if __name__ == "__main__":
-    pass
+    logging.getLogger().setLevel(logging.DEBUG)
+    assert len(sys.argv) == 3, "Wrong arguments: machine.py <code_file> <input_file>"
+    _, code_file, input_file = sys.argv
+    main(code_file, input_file)
