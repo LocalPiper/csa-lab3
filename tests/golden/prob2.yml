@@ -33,223 +33,225 @@ out_code_readable: "{\n    \"code\": [\n        [\n            \"0\",\n         
   3\",\n            \"2\"\n        ],\n        [\n            \"4\",\n           \
   \ \"10\"\n        ],\n        [\n            \"5\",\n            \"1\"\n       \
   \ ]\n    ]\n}"
-out_log: "DEBUG    root:machine.py:353 PC:   0 ADDR:   3 MEM_OUT:   2 TOS:   0 COMMAND\
-  \ push  \tpush 2\nINFO     root:machine.py:250 Instruction has operand: 2\nINFO\
-  \     root:machine.py:358 TOS: 2\nINFO     root:machine.py:359 STACK: [0]\nDEBUG\
-  \    root:machine.py:360 PC:   1 ADDR:   3 MEM_OUT:   2 TOS:   2 COMMAND dup  \t\
-  dup\nINFO     root:machine.py:358 TOS: 2\nINFO     root:machine.py:359 STACK: [0,\
-  \ 2]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   3 MEM_OUT:   2 TOS:   2 COMMAND\
-  \ pop  \tpop\nINFO     root:machine.py:358 TOS: 2\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   3 MEM_OUT:   2 TOS: \
-  \  2 COMMAND ld   \tld 5\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 5\nINFO     root:machine.py:76 data_address: 5\nINFO     root:machine.py:358 TOS:\
-  \ 1\nINFO     root:machine.py:359 STACK: [0, 2]\nDEBUG    root:machine.py:360 PC:\
-  \   4 ADDR:   5 MEM_OUT:   1 TOS:   1 COMMAND add  \tadd\nINFO     root:machine.py:358\
-  \ TOS: 3\nINFO     root:machine.py:359 STACK: [0, 2]\nDEBUG    root:machine.py:360\
-  \ PC:   5 ADDR:   5 MEM_OUT:   1 TOS:   3 COMMAND swap  \tswap\nINFO     root:machine.py:358\
-  \ TOS: 2\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360\
-  \ PC:   6 ADDR:   5 MEM_OUT:   1 TOS:   2 COMMAND st   \tst 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 2\nINFO     root:machine.py:80 data_address: 5\nINFO     root:machine.py:94\
-  \ Memory set: data_address: 5, tos: 2\nINFO     root:machine.py:358 TOS: 2\nINFO\
-  \     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360 PC:   7 ADDR:\
-  \   5 MEM_OUT:   2 TOS:   2 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS:\
-  \ 3\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC: \
-  \  8 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND dup  \tdup\nINFO     root:machine.py:358\
-  \ TOS: 3\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360\
-  \ PC:   9 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND and  \tand 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359\
-  \ STACK: [0, 3]\nDEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   2 TOS:\
-  \   1 COMMAND sub  \tsub 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [0,\
-  \ 3]\nDEBUG    root:machine.py:360 PC:  11 ADDR:   5 MEM_OUT:   2 TOS:   0 COMMAND\
-  \ jz   \tjz 2\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
-  \ STACK: [0, 3]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   5 MEM_OUT:   2 TOS:\
-  \   0 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 3\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   5 MEM_OUT:   2 TOS: \
-  \  3 COMMAND ld   \tld 5\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 5\nINFO     root:machine.py:76 data_address: 5\nINFO     root:machine.py:358 TOS:\
-  \ 2\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360 PC:\
-  \   4 ADDR:   5 MEM_OUT:   2 TOS:   2 COMMAND add  \tadd\nINFO     root:machine.py:358\
-  \ TOS: 5\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360\
-  \ PC:   5 ADDR:   5 MEM_OUT:   2 TOS:   5 COMMAND swap  \tswap\nINFO     root:machine.py:358\
-  \ TOS: 3\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360\
-  \ PC:   6 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND st   \tst 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 3\nINFO     root:machine.py:80 data_address: 5\nINFO     root:machine.py:94\
-  \ Memory set: data_address: 5, tos: 3\nINFO     root:machine.py:358 TOS: 3\nINFO\
-  \     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:   7 ADDR:\
-  \   5 MEM_OUT:   3 TOS:   3 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS:\
-  \ 5\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC: \
-  \  8 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND dup  \tdup\nINFO     root:machine.py:358\
-  \ TOS: 5\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360\
-  \ PC:   9 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND and  \tand 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359\
-  \ STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   3 TOS:\
-  \   1 COMMAND sub  \tsub 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [0,\
-  \ 5]\nDEBUG    root:machine.py:360 PC:  11 ADDR:   5 MEM_OUT:   3 TOS:   0 COMMAND\
-  \ jz   \tjz 2\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
-  \ STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   5 MEM_OUT:   3 TOS:\
-  \   0 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   5 MEM_OUT:   3 TOS: \
-  \  5 COMMAND ld   \tld 5\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 5\nINFO     root:machine.py:76 data_address: 5\nINFO     root:machine.py:358 TOS:\
-  \ 3\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:\
-  \   4 ADDR:   5 MEM_OUT:   3 TOS:   3 COMMAND add  \tadd\nINFO     root:machine.py:358\
-  \ TOS: 8\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360\
-  \ PC:   5 ADDR:   5 MEM_OUT:   3 TOS:   8 COMMAND swap  \tswap\nINFO     root:machine.py:358\
-  \ TOS: 5\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:   6 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND st   \tst 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 5\nINFO     root:machine.py:80 data_address: 5\nINFO     root:machine.py:94\
-  \ Memory set: data_address: 5, tos: 5\nINFO     root:machine.py:358 TOS: 5\nINFO\
-  \     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:   7 ADDR:\
-  \   5 MEM_OUT:   5 TOS:   5 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS:\
-  \ 8\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC: \
-  \  8 ADDR:   5 MEM_OUT:   5 TOS:   8 COMMAND dup  \tdup\nINFO     root:machine.py:358\
-  \ TOS: 8\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:   9 ADDR:   5 MEM_OUT:   5 TOS:   8 COMMAND and  \tand 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   5 TOS:\
-  \   0 COMMAND sub  \tsub 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359 STACK: [0,\
-  \ 8]\nDEBUG    root:machine.py:360 PC:  11 ADDR:   5 MEM_OUT:   5 TOS:   1 COMMAND\
-  \ jz   \tjz 2\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:  12 ADDR:   5 MEM_OUT:   5 TOS:\
-  \   1 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:  13 ADDR:   5 MEM_OUT:   5 TOS: \
-  \  8 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:  14 ADDR:   5 MEM_OUT:   5 TOS:\
-  \   8 COMMAND ld   \tld 4\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 4\nINFO     root:machine.py:76 data_address: 4\nINFO     root:machine.py:358 TOS:\
-  \ 10\nINFO     root:machine.py:359 STACK: [0, 8, 8]\nDEBUG    root:machine.py:360\
-  \ PC:  15 ADDR:   4 MEM_OUT:  10 TOS:  10 COMMAND sub  \tsub\nINFO     root:machine.py:358\
-  \ TOS: 2\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:  16 ADDR:   4 MEM_OUT:  10 TOS:   2 COMMAND jle  \tjle 24\nINFO     root:machine.py:250\
-  \ Instruction has operand: 24\nINFO     root:machine.py:358 TOS: 24\nINFO     root:machine.py:359\
-  \ STACK: [0, 8, 2]\nDEBUG    root:machine.py:360 PC:  17 ADDR:   4 MEM_OUT:  10\
-  \ TOS:  24 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 2\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:  18 ADDR:   4 MEM_OUT:  10 TOS:\
-  \   2 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:  19 ADDR:   4 MEM_OUT:  10 TOS: \
-  \  8 COMMAND ld   \tld 3\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 3\nINFO     root:machine.py:76 data_address: 3\nINFO     root:machine.py:358 TOS:\
-  \ 2\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:\
-  \  20 ADDR:   3 MEM_OUT:   2 TOS:   2 COMMAND add  \tadd\nINFO     root:machine.py:358\
-  \ TOS: 10\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:  21 ADDR:   3 MEM_OUT:   2 TOS:  10 COMMAND st   \tst 3\nINFO     root:machine.py:250\
-  \ Instruction has operand: 3\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 10\nINFO     root:machine.py:80 data_address: 3\nINFO     root:machine.py:94\
-  \ Memory set: data_address: 3, tos: 10\nINFO     root:machine.py:358 TOS: 10\nINFO\
-  \     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:  22 ADDR:\
-  \   3 MEM_OUT:  10 TOS:  10 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS:\
-  \ 8\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC: \
-  \ 23 ADDR:   3 MEM_OUT:  10 TOS:   8 COMMAND jmp  \tjmp 2\nINFO     root:machine.py:358\
-  \ TOS: 8\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360\
-  \ PC:   2 ADDR:   3 MEM_OUT:  10 TOS:   8 COMMAND pop  \tpop\nINFO     root:machine.py:358\
-  \ TOS: 0\nINFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360 PC:\
-  \   3 ADDR:   3 MEM_OUT:  10 TOS:   0 COMMAND ld   \tld 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:76 data_address: 5\nINFO\
-  \     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [0]\nDEBUG\
-  \    root:machine.py:360 PC:   4 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND add  \t\
-  add\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [0]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND swap\
-  \  \tswap\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK:\
-  \ [5]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   5 MEM_OUT:   5 TOS:   0 COMMAND\
-  \ st   \tst 5\nINFO     root:machine.py:250 Instruction has operand: 5\nINFO   \
-  \  root:machine.py:269 We are executing ST, TOS is 0\nINFO     root:machine.py:80\
-  \ data_address: 5\nINFO     root:machine.py:94 Memory set: data_address: 5, tos:\
-  \ 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:   7 ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK:\
-  \ []\nDEBUG    root:machine.py:360 PC:   8 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND\
-  \ dup  \tdup\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [5]\nDEBUG    root:machine.py:360 PC:   9 ADDR:   5 MEM_OUT:   0 TOS: \
-  \  5 COMMAND and  \tand 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   0 TOS:   1 COMMAND sub\
-  \  \tsub 1\nINFO     root:machine.py:250 Instruction has operand: 1\nINFO     root:machine.py:358\
-  \ TOS: 0\nINFO     root:machine.py:359 STACK: [5]\nDEBUG    root:machine.py:360\
-  \ PC:  11 ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND jz   \tjz 2\nINFO     root:machine.py:358\
-  \ TOS: 0\nINFO     root:machine.py:359 STACK: [5]\nDEBUG    root:machine.py:360\
-  \ PC:   2 ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND pop  \tpop\nINFO     root:machine.py:358\
-  \ TOS: 5\nINFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360 PC:\
-  \   3 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND ld   \tld 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:76 data_address: 5\nINFO\
-  \     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [5]\nDEBUG\
-  \    root:machine.py:360 PC:   4 ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND add  \t\
-  add\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND swap\
-  \  \tswap\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK:\
-  \ [5]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND\
-  \ st   \tst 5\nINFO     root:machine.py:250 Instruction has operand: 5\nINFO   \
-  \  root:machine.py:269 We are executing ST, TOS is 5\nINFO     root:machine.py:80\
-  \ data_address: 5\nINFO     root:machine.py:94 Memory set: data_address: 5, tos:\
-  \ 5\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:   7 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK:\
-  \ []\nDEBUG    root:machine.py:360 PC:   8 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND\
-  \ dup  \tdup\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [5]\nDEBUG    root:machine.py:360 PC:   9 ADDR:   5 MEM_OUT:   5 TOS: \
-  \  5 COMMAND and  \tand 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 1\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   5 TOS:   1 COMMAND sub\
-  \  \tsub 1\nINFO     root:machine.py:250 Instruction has operand: 1\nINFO     root:machine.py:358\
-  \ TOS: 0\nINFO     root:machine.py:359 STACK: [5]\nDEBUG    root:machine.py:360\
-  \ PC:  11 ADDR:   5 MEM_OUT:   5 TOS:   0 COMMAND jz   \tjz 2\nINFO     root:machine.py:358\
-  \ TOS: 0\nINFO     root:machine.py:359 STACK: [5]\nDEBUG    root:machine.py:360\
-  \ PC:   2 ADDR:   5 MEM_OUT:   5 TOS:   0 COMMAND pop  \tpop\nINFO     root:machine.py:358\
-  \ TOS: 5\nINFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360 PC:\
-  \   3 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND ld   \tld 5\nINFO     root:machine.py:250\
-  \ Instruction has operand: 5\nINFO     root:machine.py:76 data_address: 5\nINFO\
-  \     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [5]\nDEBUG\
-  \    root:machine.py:360 PC:   4 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND add  \t\
-  add\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK: [5]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND swap\
-  \  \tswap\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK:\
-  \ [10]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND\
-  \ st   \tst 5\nINFO     root:machine.py:250 Instruction has operand: 5\nINFO   \
-  \  root:machine.py:269 We are executing ST, TOS is 5\nINFO     root:machine.py:80\
-  \ data_address: 5\nINFO     root:machine.py:94 Memory set: data_address: 5, tos:\
-  \ 5\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359 STACK: [10]\n\
-  DEBUG    root:machine.py:360 PC:   7 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK:\
-  \ []\nDEBUG    root:machine.py:360 PC:   8 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND\
-  \ dup  \tdup\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: [10]\nDEBUG    root:machine.py:360 PC:   9 ADDR:   5 MEM_OUT:   5 TOS:\
-  \  10 COMMAND and  \tand 1\nINFO     root:machine.py:250 Instruction has operand:\
-  \ 1\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [10]\n\
-  DEBUG    root:machine.py:360 PC:  10 ADDR:   5 MEM_OUT:   5 TOS:   0 COMMAND sub\
-  \  \tsub 1\nINFO     root:machine.py:250 Instruction has operand: 1\nINFO     root:machine.py:358\
-  \ TOS: 1\nINFO     root:machine.py:359 STACK: [10]\nDEBUG    root:machine.py:360\
-  \ PC:  11 ADDR:   5 MEM_OUT:   5 TOS:   1 COMMAND jz   \tjz 2\nINFO     root:machine.py:358\
-  \ TOS: 1\nINFO     root:machine.py:359 STACK: [10]\nDEBUG    root:machine.py:360\
-  \ PC:  12 ADDR:   5 MEM_OUT:   5 TOS:   1 COMMAND pop  \tpop\nINFO     root:machine.py:358\
-  \ TOS: 10\nINFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360\
-  \ PC:  13 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND dup  \tdup\nINFO     root:machine.py:358\
-  \ TOS: 10\nINFO     root:machine.py:359 STACK: [10]\nDEBUG    root:machine.py:360\
-  \ PC:  14 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND ld   \tld 4\nINFO     root:machine.py:250\
-  \ Instruction has operand: 4\nINFO     root:machine.py:76 data_address: 4\nINFO\
-  \     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK: [10, 10]\n\
-  DEBUG    root:machine.py:360 PC:  15 ADDR:   4 MEM_OUT:  10 TOS:  10 COMMAND sub\
-  \  \tsub\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK:\
-  \ [10]\nDEBUG    root:machine.py:360 PC:  16 ADDR:   4 MEM_OUT:  10 TOS:   0 COMMAND\
-  \ jle  \tjle 24\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
-  \ STACK: [10]\nDEBUG    root:machine.py:360 PC:  24 ADDR:   4 MEM_OUT:  10 TOS:\
-  \   0 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: []\nDEBUG    root:machine.py:360 PC:  25 ADDR:   4 MEM_OUT:  10 TOS:  10\
-  \ COMMAND ld   \tld 3\nINFO     root:machine.py:250 Instruction has operand: 3\n\
-  INFO     root:machine.py:76 data_address: 3\nINFO     root:machine.py:358 TOS: 10\n\
-  INFO     root:machine.py:359 STACK: [10]\nDEBUG    root:machine.py:360 PC:  26 ADDR:\
-  \   3 MEM_OUT:  10 TOS:  10 COMMAND st   \tst 2\nINFO     root:machine.py:250 Instruction\
-  \ has operand: 2\nINFO     root:machine.py:269 We are executing ST, TOS is 10\n\
-  INFO     root:machine.py:80 data_address: 2\nDEBUG    root:machine.py:89 output:\
-  \ '' << '10'\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: [10]\nDEBUG    root:machine.py:360 PC:  27 ADDR:   2 MEM_OUT:   0 TOS:\
-  \  10 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: []\nDEBUG    root:machine.py:360 PC:  28 ADDR:   2 MEM_OUT:   0 TOS:  10\
-  \ COMMAND hlt  \thlt\nINFO     root:machine.py:367 output_buffer: '10'"
+out_log: "DEBUG   machine:simulation    PC:   0 ADDR:   3 MEM_OUT:   2 TOS:   0 COMMAND\
+  \ push  \tpush 2\nINFO    machine:decode_and_execute_instruction Instruction has\
+  \ operand: 2\nINFO    machine:simulation    TOS: 2\nINFO    machine:simulation \
+  \   STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   3 MEM_OUT:   2 TOS:\
+  \   2 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 2\nINFO    machine:simulation\
+  \    STACK: [0, 2]\nDEBUG   machine:simulation    PC:   2 ADDR:   3 MEM_OUT:   2\
+  \ TOS:   2 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 2\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   3 ADDR:   3 MEM_OUT:   2 TOS:\
+  \   2 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO    machine:simulation\
+  \    TOS: 1\nINFO    machine:simulation    STACK: [0, 2]\nDEBUG   machine:simulation\
+  \    PC:   4 ADDR:   5 MEM_OUT:   1 TOS:   1 COMMAND add  \tadd\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0, 2]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   5 MEM_OUT:   1 TOS:   3 COMMAND swap  \tswap\nINFO    machine:simulation\
+  \    TOS: 2\nINFO    machine:simulation    STACK: [0, 3]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   5 MEM_OUT:   1 TOS:   2 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 2\nINFO    machine:signal_wr     data_address: 5\nINFO\
+  \    machine:signal_wr     Memory set: data_address: 5, tos: 2\nINFO    machine:simulation\
+  \    TOS: 2\nINFO    machine:simulation    STACK: [0, 3]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   5 MEM_OUT:   2 TOS:   2 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0, 3]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [0, 3]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   2\
+  \ TOS:   1 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 3]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   2\
+  \ TOS:   0 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 3]\nDEBUG   machine:simulation    PC:   2 ADDR:   5 MEM_OUT:   2\
+  \ TOS:   0 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 3\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT:   2 TOS:\
+  \   3 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO    machine:simulation\
+  \    TOS: 2\nINFO    machine:simulation    STACK: [0, 3]\nDEBUG   machine:simulation\
+  \    PC:   4 ADDR:   5 MEM_OUT:   2 TOS:   2 COMMAND add  \tadd\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [0, 3]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   5 MEM_OUT:   2 TOS:   5 COMMAND swap  \tswap\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0, 5]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   5 MEM_OUT:   2 TOS:   3 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 3\nINFO    machine:signal_wr     data_address: 5\nINFO\
+  \    machine:signal_wr     Memory set: data_address: 5, tos: 3\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0, 5]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   5 MEM_OUT:   3 TOS:   3 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [0, 5]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [0, 5]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   3\
+  \ TOS:   1 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 5]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   3\
+  \ TOS:   0 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 5]\nDEBUG   machine:simulation    PC:   2 ADDR:   5 MEM_OUT:   3\
+  \ TOS:   0 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT:   3 TOS:\
+  \   5 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO    machine:simulation\
+  \    TOS: 3\nINFO    machine:simulation    STACK: [0, 5]\nDEBUG   machine:simulation\
+  \    PC:   4 ADDR:   5 MEM_OUT:   3 TOS:   3 COMMAND add  \tadd\nINFO    machine:simulation\
+  \    TOS: 8\nINFO    machine:simulation    STACK: [0, 5]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   5 MEM_OUT:   3 TOS:   8 COMMAND swap  \tswap\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   5 MEM_OUT:   3 TOS:   5 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 5\nINFO    machine:signal_wr     data_address: 5\nINFO\
+  \    machine:signal_wr     Memory set: data_address: 5, tos: 5\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 8\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   5 TOS:   8 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 8\nINFO    machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   5 TOS:   8 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   5\
+  \ TOS:   0 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   5\
+  \ TOS:   1 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:  12 ADDR:   5 MEM_OUT:   5\
+  \ TOS:   1 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:  13 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   8 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:  14 ADDR:   5 MEM_OUT:   5\
+  \ TOS:   8 COMMAND ld   \tld 4\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 4\nINFO    machine:get_char      data_address: 4\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: [0, 8, 8]\nDEBUG   machine:simulation\
+  \    PC:  15 ADDR:   4 MEM_OUT:  10 TOS:  10 COMMAND sub  \tsub\nINFO    machine:simulation\
+  \    TOS: 2\nINFO    machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation\
+  \    PC:  16 ADDR:   4 MEM_OUT:  10 TOS:   2 COMMAND jle  \tjle 24\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 24\nINFO    machine:simulation    TOS: 24\nINFO    machine:simulation\
+  \    STACK: [0, 8, 2]\nDEBUG   machine:simulation    PC:  17 ADDR:   4 MEM_OUT:\
+  \  10 TOS:  24 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 2\nINFO  \
+  \  machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation    PC:  18 ADDR:\
+  \   4 MEM_OUT:  10 TOS:   2 COMMAND pop  \tpop\nINFO    machine:simulation    TOS:\
+  \ 8\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation    PC:\
+  \  19 ADDR:   4 MEM_OUT:  10 TOS:   8 COMMAND ld   \tld 3\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 3\nINFO    machine:get_char      data_address: 3\nINFO\
+  \    machine:simulation    TOS: 2\nINFO    machine:simulation    STACK: [0, 8]\n\
+  DEBUG   machine:simulation    PC:  20 ADDR:   3 MEM_OUT:   2 TOS:   2 COMMAND add\
+  \  \tadd\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation    STACK:\
+  \ [0, 8]\nDEBUG   machine:simulation    PC:  21 ADDR:   3 MEM_OUT:   2 TOS:  10\
+  \ COMMAND st   \tst 3\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 3\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 10\nINFO    machine:signal_wr     data_address: 3\nINFO    machine:signal_wr\
+  \     Memory set: data_address: 3, tos: 10\nINFO    machine:simulation    TOS: 10\n\
+  INFO    machine:simulation    STACK: [0, 8]\nDEBUG   machine:simulation    PC: \
+  \ 22 ADDR:   3 MEM_OUT:  10 TOS:  10 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 8\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:  23 ADDR:   3 MEM_OUT:  10 TOS:   8 COMMAND jmp  \tjmp 2\nINFO    machine:simulation\
+  \    TOS: 8\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   3 MEM_OUT:  10 TOS:   8 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 0\nINFO    machine:simulation    STACK: []\nDEBUG   machine:simulation\
+  \    PC:   3 ADDR:   3 MEM_OUT:  10 TOS:   0 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO\
+  \    machine:simulation    TOS: 5\nINFO    machine:simulation    STACK: [0]\nDEBUG\
+  \   machine:simulation    PC:   4 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND add  \t\
+  add\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation    STACK:\
+  \ [0]\nDEBUG   machine:simulation    PC:   5 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND\
+  \ swap  \tswap\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:   6 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   0 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 0\nINFO    machine:signal_wr     data_address: 5\nINFO    machine:signal_wr\
+  \     Memory set: data_address: 5, tos: 0\nINFO    machine:simulation    TOS: 0\n\
+  INFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation    PC:   7\
+  \ ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: []\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   0 TOS:\
+  \   1 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   0 TOS:\
+  \   0 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:   2 ADDR:   5 MEM_OUT:   0 TOS:\
+  \   0 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: []\nDEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT:   0 TOS:\
+  \   5 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO    machine:simulation\
+  \    TOS: 0\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   4 ADDR:   5 MEM_OUT:   0 TOS:   0 COMMAND add  \tadd\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND swap  \tswap\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   5 MEM_OUT:   0 TOS:   5 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 5\nINFO    machine:signal_wr     data_address: 5\nINFO\
+  \    machine:signal_wr     Memory set: data_address: 5, tos: 5\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: []\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   1 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   0 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [5]\nDEBUG   machine:simulation    PC:   2 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   0 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: []\nDEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   5 COMMAND ld   \tld 5\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 5\nINFO    machine:get_char      data_address: 5\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   4 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND add  \tadd\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: [5]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND swap  \tswap\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [10]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND st   \tst 5\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 5\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 5\nINFO    machine:signal_wr     data_address: 5\nINFO\
+  \    machine:signal_wr     Memory set: data_address: 5, tos: 5\nINFO    machine:simulation\
+  \    TOS: 5\nINFO    machine:simulation    STACK: [10]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   5 MEM_OUT:   5 TOS:   5 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: []\nDEBUG   machine:simulation\
+  \    PC:   8 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: [10]\nDEBUG   machine:simulation\
+  \    PC:   9 ADDR:   5 MEM_OUT:   5 TOS:  10 COMMAND and  \tand 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [10]\nDEBUG   machine:simulation    PC:  10 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   0 COMMAND sub  \tsub 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [10]\nDEBUG   machine:simulation    PC:  11 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   1 COMMAND jz   \tjz 2\nINFO    machine:simulation    TOS: 1\nINFO    machine:simulation\
+  \    STACK: [10]\nDEBUG   machine:simulation    PC:  12 ADDR:   5 MEM_OUT:   5 TOS:\
+  \   1 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: []\nDEBUG   machine:simulation    PC:  13 ADDR:   5 MEM_OUT:   5 TOS:\
+  \  10 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [10]\nDEBUG   machine:simulation    PC:  14 ADDR:   5 MEM_OUT:   5 TOS:\
+  \  10 COMMAND ld   \tld 4\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 4\nINFO    machine:get_char      data_address: 4\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: [10, 10]\nDEBUG   machine:simulation\
+  \    PC:  15 ADDR:   4 MEM_OUT:  10 TOS:  10 COMMAND sub  \tsub\nINFO    machine:simulation\
+  \    TOS: 0\nINFO    machine:simulation    STACK: [10]\nDEBUG   machine:simulation\
+  \    PC:  16 ADDR:   4 MEM_OUT:  10 TOS:   0 COMMAND jle  \tjle 24\nINFO    machine:simulation\
+  \    TOS: 0\nINFO    machine:simulation    STACK: [10]\nDEBUG   machine:simulation\
+  \    PC:  24 ADDR:   4 MEM_OUT:  10 TOS:   0 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 10\nINFO    machine:simulation    STACK: []\nDEBUG   machine:simulation\
+  \    PC:  25 ADDR:   4 MEM_OUT:  10 TOS:  10 COMMAND ld   \tld 3\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 3\nINFO    machine:get_char      data_address: 3\nINFO\
+  \    machine:simulation    TOS: 10\nINFO    machine:simulation    STACK: [10]\n\
+  DEBUG   machine:simulation    PC:  26 ADDR:   3 MEM_OUT:  10 TOS:  10 COMMAND st\
+  \   \tst 2\nINFO    machine:decode_and_execute_instruction Instruction has operand:\
+  \ 2\nINFO    machine:decode_and_execute_instruction We are executing ST, TOS is\
+  \ 10\nINFO    machine:signal_wr     data_address: 2\nDEBUG   machine:signal_wr \
+  \    output: '' << '10'\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [10]\nDEBUG   machine:simulation    PC:  27 ADDR:   2 MEM_OUT:   0 TOS:\
+  \  10 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: []\nDEBUG   machine:simulation    PC:  28 ADDR:   2 MEM_OUT:   0 TOS:\
+  \  10 COMMAND hlt  \thlt\nINFO    machine:simulation    output_buffer: '10'"
 source_code: "section .data:\n   result: 2\n   max: 10\n   prev: 1\nsection .code:\n\
   .start:\n   push 2\n   dup\n.loop:\n   pop\n   ld prev\n   add\n   swap\n   st prev\n\
   \   pop\n\n   dup\n   and 1\n   sub 1\n   jz .loop\n   pop\n\n   dup\n   ld max\n\

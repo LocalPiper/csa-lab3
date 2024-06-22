@@ -1,0 +1,409 @@
+DEBUG   machine:simulation    PC:   0 ADDR:   3 MEM_OUT:  72 TOS:   0 COMMAND push  	push 3
+INFO    machine:decode_and_execute_instruction Instruction has operand: 3
+INFO    machine:simulation    TOS: 3
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   3 MEM_OUT:  72 TOS:   3 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 3
+INFO    machine:simulation    STACK: [0, 3]
+DEBUG   machine:simulation    PC:   2 ADDR:   3 MEM_OUT:  72 TOS:   3 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 3
+INFO    machine:simulation    TOS: 72
+INFO    machine:simulation    STACK: [0, 3]
+DEBUG   machine:simulation    PC:   3 ADDR:   3 MEM_OUT:  72 TOS:  72 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 72
+INFO    machine:simulation    STACK: [0, 3]
+DEBUG   machine:simulation    PC:   4 ADDR:   3 MEM_OUT:  72 TOS:  72 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 72
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: '' << 'H'
+INFO    machine:simulation    TOS: 72
+INFO    machine:simulation    STACK: [0, 3]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  72 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 3
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   3 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 4
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   4 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 4
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   4 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 4
+INFO    machine:simulation    STACK: [0, 4]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   4 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 4
+INFO    machine:simulation    TOS: 101
+INFO    machine:simulation    STACK: [0, 4]
+DEBUG   machine:simulation    PC:   3 ADDR:   4 MEM_OUT: 101 TOS: 101 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 101
+INFO    machine:simulation    STACK: [0, 4]
+DEBUG   machine:simulation    PC:   4 ADDR:   4 MEM_OUT: 101 TOS: 101 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 101
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'H' << 'e'
+INFO    machine:simulation    TOS: 101
+INFO    machine:simulation    STACK: [0, 4]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 101 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 4
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   4 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 5
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   5 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 5
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   5 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 5
+INFO    machine:simulation    STACK: [0, 5]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   5 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 5
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 5]
+DEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT: 108 TOS: 108 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 5]
+DEBUG   machine:simulation    PC:   4 ADDR:   5 MEM_OUT: 108 TOS: 108 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 108
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'He' << 'l'
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 5]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 108 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 5
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   5 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 6
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   6 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 6
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   6 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 6
+INFO    machine:simulation    STACK: [0, 6]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   6 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 6
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 6]
+DEBUG   machine:simulation    PC:   3 ADDR:   6 MEM_OUT: 108 TOS: 108 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 6]
+DEBUG   machine:simulation    PC:   4 ADDR:   6 MEM_OUT: 108 TOS: 108 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 108
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hel' << 'l'
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 6]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 108 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 6
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   6 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 7
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   7 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 7
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   7 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 7
+INFO    machine:simulation    STACK: [0, 7]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   7 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 7
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 7]
+DEBUG   machine:simulation    PC:   3 ADDR:   7 MEM_OUT: 111 TOS: 111 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 7]
+DEBUG   machine:simulation    PC:   4 ADDR:   7 MEM_OUT: 111 TOS: 111 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 111
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hell' << 'o'
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 7]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 111 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 7
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   7 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 8
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   8 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 8
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   8 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 8
+INFO    machine:simulation    STACK: [0, 8]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   8 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 8
+INFO    machine:simulation    TOS: 44
+INFO    machine:simulation    STACK: [0, 8]
+DEBUG   machine:simulation    PC:   3 ADDR:   8 MEM_OUT:  44 TOS:  44 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 44
+INFO    machine:simulation    STACK: [0, 8]
+DEBUG   machine:simulation    PC:   4 ADDR:   8 MEM_OUT:  44 TOS:  44 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 44
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello' << ','
+INFO    machine:simulation    TOS: 44
+INFO    machine:simulation    STACK: [0, 8]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  44 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 8
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   8 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 9
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:   9 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 9
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:   9 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 9
+INFO    machine:simulation    STACK: [0, 9]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:   9 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 9
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 9]
+DEBUG   machine:simulation    PC:   3 ADDR:   9 MEM_OUT:  32 TOS:  32 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 9]
+DEBUG   machine:simulation    PC:   4 ADDR:   9 MEM_OUT:  32 TOS:  32 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 32
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello,' << ' '
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 9]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  32 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 9
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:   9 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0, 10]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 10
+INFO    machine:simulation    TOS: 119
+INFO    machine:simulation    STACK: [0, 10]
+DEBUG   machine:simulation    PC:   3 ADDR:  10 MEM_OUT: 119 TOS: 119 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 119
+INFO    machine:simulation    STACK: [0, 10]
+DEBUG   machine:simulation    PC:   4 ADDR:  10 MEM_OUT: 119 TOS: 119 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 119
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, ' << 'w'
+INFO    machine:simulation    TOS: 119
+INFO    machine:simulation    STACK: [0, 10]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 119 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 11
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 11
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 11
+INFO    machine:simulation    STACK: [0, 11]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 11
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 11]
+DEBUG   machine:simulation    PC:   3 ADDR:  11 MEM_OUT: 111 TOS: 111 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 11]
+DEBUG   machine:simulation    PC:   4 ADDR:  11 MEM_OUT: 111 TOS: 111 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 111
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, w' << 'o'
+INFO    machine:simulation    TOS: 111
+INFO    machine:simulation    STACK: [0, 11]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 111 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 11
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 12
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 12
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 12
+INFO    machine:simulation    STACK: [0, 12]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 12
+INFO    machine:simulation    TOS: 114
+INFO    machine:simulation    STACK: [0, 12]
+DEBUG   machine:simulation    PC:   3 ADDR:  12 MEM_OUT: 114 TOS: 114 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 114
+INFO    machine:simulation    STACK: [0, 12]
+DEBUG   machine:simulation    PC:   4 ADDR:  12 MEM_OUT: 114 TOS: 114 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 114
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, wo' << 'r'
+INFO    machine:simulation    TOS: 114
+INFO    machine:simulation    STACK: [0, 12]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 114 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 12
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 13
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 13
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 13
+INFO    machine:simulation    STACK: [0, 13]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 13
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 13]
+DEBUG   machine:simulation    PC:   3 ADDR:  13 MEM_OUT: 108 TOS: 108 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 13]
+DEBUG   machine:simulation    PC:   4 ADDR:  13 MEM_OUT: 108 TOS: 108 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 108
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, wor' << 'l'
+INFO    machine:simulation    TOS: 108
+INFO    machine:simulation    STACK: [0, 13]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 108 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 13
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 14
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 14
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 14
+INFO    machine:simulation    STACK: [0, 14]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 14
+INFO    machine:simulation    TOS: 100
+INFO    machine:simulation    STACK: [0, 14]
+DEBUG   machine:simulation    PC:   3 ADDR:  14 MEM_OUT: 100 TOS: 100 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 100
+INFO    machine:simulation    STACK: [0, 14]
+DEBUG   machine:simulation    PC:   4 ADDR:  14 MEM_OUT: 100 TOS: 100 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 100
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, worl' << 'd'
+INFO    machine:simulation    TOS: 100
+INFO    machine:simulation    STACK: [0, 14]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 100 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 14
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 15
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 15
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 15
+INFO    machine:simulation    STACK: [0, 15]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 15
+INFO    machine:simulation    TOS: 33
+INFO    machine:simulation    STACK: [0, 15]
+DEBUG   machine:simulation    PC:   3 ADDR:  15 MEM_OUT:  33 TOS:  33 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 33
+INFO    machine:simulation    STACK: [0, 15]
+DEBUG   machine:simulation    PC:   4 ADDR:  15 MEM_OUT:  33 TOS:  33 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 33
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, world' << '!'
+INFO    machine:simulation    TOS: 33
+INFO    machine:simulation    STACK: [0, 15]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  33 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 15
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 16
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 16
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 16
+INFO    machine:simulation    STACK: [0, 16]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 16
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 16]
+DEBUG   machine:simulation    PC:   3 ADDR:  16 MEM_OUT:  32 TOS:  32 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 16]
+DEBUG   machine:simulation    PC:   4 ADDR:  16 MEM_OUT:  32 TOS:  32 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 32
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, world!' << ' '
+INFO    machine:simulation    TOS: 32
+INFO    machine:simulation    STACK: [0, 16]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  32 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 16
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 17
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 17
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 17
+INFO    machine:simulation    STACK: [0, 17]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 17
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0, 17]
+DEBUG   machine:simulation    PC:   3 ADDR:  17 MEM_OUT:  10 TOS:  10 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0, 17]
+DEBUG   machine:simulation    PC:   4 ADDR:  17 MEM_OUT:  10 TOS:  10 COMMAND st   	st 1
+INFO    machine:decode_and_execute_instruction Instruction has operand: 1
+INFO    machine:decode_and_execute_instruction We are executing ST, TOS is 10
+INFO    machine:signal_wr     data_address: 1
+DEBUG   machine:signal_wr     output: 'Hello, world! ' << '\n'
+INFO    machine:simulation    TOS: 10
+INFO    machine:simulation    STACK: [0, 17]
+DEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 17
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND inc  	inc
+INFO    machine:simulation    TOS: 18
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND jmp  	jmp 1
+INFO    machine:simulation    TOS: 18
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND dup  	dup
+INFO    machine:simulation    TOS: 18
+INFO    machine:simulation    STACK: [0, 18]
+DEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND ld   	ld
+INFO    machine:get_char      data_address: 18
+INFO    machine:simulation    TOS: 0
+INFO    machine:simulation    STACK: [0, 18]
+DEBUG   machine:simulation    PC:   3 ADDR:  18 MEM_OUT:   0 TOS:   0 COMMAND jz   	jz 8
+INFO    machine:simulation    TOS: 0
+INFO    machine:simulation    STACK: [0, 18]
+DEBUG   machine:simulation    PC:   8 ADDR:  18 MEM_OUT:   0 TOS:   0 COMMAND pop  	pop
+INFO    machine:simulation    TOS: 18
+INFO    machine:simulation    STACK: [0]
+DEBUG   machine:simulation    PC:   9 ADDR:  18 MEM_OUT:   0 TOS:  18 COMMAND hlt  	hlt
+INFO    machine:simulation    output_buffer: 'Hello, world! \n'

@@ -23,284 +23,291 @@ out_code_readable: "{\n    \"code\": [\n        [\n            \"0\",\n         
   \   [\n            \"16\",\n            \"32\"\n        ],\n        [\n        \
   \    \"17\",\n            \"10\"\n        ],\n        [\n            \"18\",\n \
   \           \"0\"\n        ]\n    ]\n}"
-out_log: "DEBUG    root:machine.py:353 PC:   0 ADDR:   3 MEM_OUT:  72 TOS:   0 COMMAND\
-  \ push  \tpush 3\nINFO     root:machine.py:250 Instruction has operand: 3\nINFO\
-  \     root:machine.py:358 TOS: 3\nINFO     root:machine.py:359 STACK: [0]\nDEBUG\
-  \    root:machine.py:360 PC:   1 ADDR:   3 MEM_OUT:  72 TOS:   3 COMMAND dup  \t\
-  dup\nINFO     root:machine.py:358 TOS: 3\nINFO     root:machine.py:359 STACK: [0,\
-  \ 3]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   3 MEM_OUT:  72 TOS:   3 COMMAND\
-  \ ld   \tld\nINFO     root:machine.py:76 data_address: 3\nINFO     root:machine.py:358\
-  \ TOS: 72\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   3 MEM_OUT:  72 TOS:  72 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 72\nINFO     root:machine.py:359 STACK: [0, 3]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   3 MEM_OUT:  72 TOS:  72 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 72\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: '' << 'H'\nINFO     root:machine.py:358 TOS: 72\nINFO     root:machine.py:359\
-  \ STACK: [0, 3]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  72 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 3\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  3 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 4\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  4 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 4\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  4 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 4\nINFO     root:machine.py:359\
-  \ STACK: [0, 4]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   4 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 4\nINFO     root:machine.py:358\
-  \ TOS: 101\nINFO     root:machine.py:359 STACK: [0, 4]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   4 MEM_OUT: 101 TOS: 101 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 101\nINFO     root:machine.py:359 STACK: [0, 4]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   4 MEM_OUT: 101 TOS: 101 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 101\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'H' << 'e'\nINFO     root:machine.py:358 TOS: 101\nINFO     root:machine.py:359\
-  \ STACK: [0, 4]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \ 101 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 4\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  4 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  5 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  5 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   5 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 5\nINFO     root:machine.py:358\
-  \ TOS: 108\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   5 MEM_OUT: 108 TOS: 108 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 108\nINFO     root:machine.py:359 STACK: [0, 5]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   5 MEM_OUT: 108 TOS: 108 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 108\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'He' << 'l'\nINFO     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359\
-  \ STACK: [0, 5]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \ 108 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 5\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  5 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 6\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  6 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 6\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  6 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 6\nINFO     root:machine.py:359\
-  \ STACK: [0, 6]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   6 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 6\nINFO     root:machine.py:358\
-  \ TOS: 108\nINFO     root:machine.py:359 STACK: [0, 6]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   6 MEM_OUT: 108 TOS: 108 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 108\nINFO     root:machine.py:359 STACK: [0, 6]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   6 MEM_OUT: 108 TOS: 108 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 108\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'Hel' << 'l'\nINFO     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359\
-  \ STACK: [0, 6]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \ 108 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 6\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  6 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 7\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  7 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 7\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  7 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 7\nINFO     root:machine.py:359\
-  \ STACK: [0, 7]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   7 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 7\nINFO     root:machine.py:358\
-  \ TOS: 111\nINFO     root:machine.py:359 STACK: [0, 7]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   7 MEM_OUT: 111 TOS: 111 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 111\nINFO     root:machine.py:359 STACK: [0, 7]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   7 MEM_OUT: 111 TOS: 111 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 111\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'Hell' << 'o'\nINFO     root:machine.py:358 TOS: 111\nINFO     root:machine.py:359\
-  \ STACK: [0, 7]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \ 111 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 7\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  7 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  8 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  8 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   8 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 8\nINFO     root:machine.py:358\
-  \ TOS: 44\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   8 MEM_OUT:  44 TOS:  44 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 44\nINFO     root:machine.py:359 STACK: [0, 8]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   8 MEM_OUT:  44 TOS:  44 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 44\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'Hello' << ','\nINFO     root:machine.py:358 TOS: 44\nINFO     root:machine.py:359\
-  \ STACK: [0, 8]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  44 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 8\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  8 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 9\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  9 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 9\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  9 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 9\nINFO     root:machine.py:359\
-  \ STACK: [0, 9]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \   9 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 9\nINFO     root:machine.py:358\
-  \ TOS: 32\nINFO     root:machine.py:359 STACK: [0, 9]\nDEBUG    root:machine.py:360\
-  \ PC:   3 ADDR:   9 MEM_OUT:  32 TOS:  32 COMMAND jz   \tjz 8\nINFO     root:machine.py:358\
-  \ TOS: 32\nINFO     root:machine.py:359 STACK: [0, 9]\nDEBUG    root:machine.py:360\
-  \ PC:   4 ADDR:   9 MEM_OUT:  32 TOS:  32 COMMAND st   \tst 1\nINFO     root:machine.py:250\
-  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
-  \ TOS is 32\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
-  \ output: 'Hello,' << ' '\nINFO     root:machine.py:358 TOS: 32\nINFO     root:machine.py:359\
-  \ STACK: [0, 9]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  32 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 9\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS: \
-  \  9 COMMAND inc  \tinc\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 10 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 10 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359\
-  \ STACK: [0, 10]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  10 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 10\nINFO    \
-  \ root:machine.py:358 TOS: 119\nINFO     root:machine.py:359 STACK: [0, 10]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  10 MEM_OUT: 119 TOS: 119 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 119\nINFO     root:machine.py:359 STACK:\
-  \ [0, 10]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  10 MEM_OUT: 119 TOS: 119\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 119\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, ' << 'w'\nINFO  \
-  \   root:machine.py:358 TOS: 119\nINFO     root:machine.py:359 STACK: [0, 10]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 119 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 11\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 11 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 11\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 11 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 11\nINFO     root:machine.py:359\
-  \ STACK: [0, 11]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  11 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 11\nINFO    \
-  \ root:machine.py:358 TOS: 111\nINFO     root:machine.py:359 STACK: [0, 11]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  11 MEM_OUT: 111 TOS: 111 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 111\nINFO     root:machine.py:359 STACK:\
-  \ [0, 11]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  11 MEM_OUT: 111 TOS: 111\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 111\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, w' << 'o'\nINFO \
-  \    root:machine.py:358 TOS: 111\nINFO     root:machine.py:359 STACK: [0, 11]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 111 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 11\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 12\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 12 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 12\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 12 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 12\nINFO     root:machine.py:359\
-  \ STACK: [0, 12]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  12 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 12\nINFO    \
-  \ root:machine.py:358 TOS: 114\nINFO     root:machine.py:359 STACK: [0, 12]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  12 MEM_OUT: 114 TOS: 114 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 114\nINFO     root:machine.py:359 STACK:\
-  \ [0, 12]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  12 MEM_OUT: 114 TOS: 114\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 114\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, wo' << 'r'\nINFO\
-  \     root:machine.py:358 TOS: 114\nINFO     root:machine.py:359 STACK: [0, 12]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 114 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 12\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 13\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 13 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 13\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 13 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 13\nINFO     root:machine.py:359\
-  \ STACK: [0, 13]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  13 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 13\nINFO    \
-  \ root:machine.py:358 TOS: 108\nINFO     root:machine.py:359 STACK: [0, 13]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  13 MEM_OUT: 108 TOS: 108 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359 STACK:\
-  \ [0, 13]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  13 MEM_OUT: 108 TOS: 108\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 108\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, wor' << 'l'\nINFO\
-  \     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359 STACK: [0, 13]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 108 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 13\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 14\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 14 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 14\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 14 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 14\nINFO     root:machine.py:359\
-  \ STACK: [0, 14]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  14 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 14\nINFO    \
-  \ root:machine.py:358 TOS: 100\nINFO     root:machine.py:359 STACK: [0, 14]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  14 MEM_OUT: 100 TOS: 100 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 100\nINFO     root:machine.py:359 STACK:\
-  \ [0, 14]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  14 MEM_OUT: 100 TOS: 100\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 100\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, worl' << 'd'\nINFO\
-  \     root:machine.py:358 TOS: 100\nINFO     root:machine.py:359 STACK: [0, 14]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 100 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 14\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 15\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 15 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 15\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 15 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 15\nINFO     root:machine.py:359\
-  \ STACK: [0, 15]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  15 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 15\nINFO    \
-  \ root:machine.py:358 TOS: 33\nINFO     root:machine.py:359 STACK: [0, 15]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  15 MEM_OUT:  33 TOS:  33 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 33\nINFO     root:machine.py:359 STACK:\
-  \ [0, 15]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  15 MEM_OUT:  33 TOS:  33\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 33\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, world' << '!'\nINFO\
-  \     root:machine.py:358 TOS: 33\nINFO     root:machine.py:359 STACK: [0, 15]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  33 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 15\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 16\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 16 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 16\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 16 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 16\nINFO     root:machine.py:359\
-  \ STACK: [0, 16]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  16 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 16\nINFO    \
-  \ root:machine.py:358 TOS: 32\nINFO     root:machine.py:359 STACK: [0, 16]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  16 MEM_OUT:  32 TOS:  32 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 32\nINFO     root:machine.py:359 STACK:\
-  \ [0, 16]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  16 MEM_OUT:  32 TOS:  32\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 32\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, world!' << ' '\n\
-  INFO     root:machine.py:358 TOS: 32\nINFO     root:machine.py:359 STACK: [0, 16]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  32 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 16\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 17\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 17 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 17\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 17 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 17\nINFO     root:machine.py:359\
-  \ STACK: [0, 17]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  17 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 17\nINFO    \
-  \ root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK: [0, 17]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  17 MEM_OUT:  10 TOS:  10 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK:\
-  \ [0, 17]\nDEBUG    root:machine.py:360 PC:   4 ADDR:  17 MEM_OUT:  10 TOS:  10\
-  \ COMMAND st   \tst 1\nINFO     root:machine.py:250 Instruction has operand: 1\n\
-  INFO     root:machine.py:269 We are executing ST, TOS is 10\nINFO     root:machine.py:80\
-  \ data_address: 1\nDEBUG    root:machine.py:83 output: 'Hello, world! ' << '\\n'\n\
-  INFO     root:machine.py:358 TOS: 10\nINFO     root:machine.py:359 STACK: [0, 17]\n\
-  DEBUG    root:machine.py:360 PC:   5 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND pop\
-  \  \tpop\nINFO     root:machine.py:358 TOS: 17\nINFO     root:machine.py:359 STACK:\
-  \ [0]\nDEBUG    root:machine.py:360 PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND\
-  \ inc  \tinc\nINFO     root:machine.py:358 TOS: 18\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   7 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 18 COMMAND jmp  \tjmp 1\nINFO     root:machine.py:358 TOS: 18\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   1 MEM_OUT:   0 TOS: \
-  \ 18 COMMAND dup  \tdup\nINFO     root:machine.py:358 TOS: 18\nINFO     root:machine.py:359\
-  \ STACK: [0, 18]\nDEBUG    root:machine.py:360 PC:   2 ADDR:   1 MEM_OUT:   0 TOS:\
-  \  18 COMMAND ld   \tld\nINFO     root:machine.py:76 data_address: 18\nINFO    \
-  \ root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [0, 18]\nDEBUG\
-  \    root:machine.py:360 PC:   3 ADDR:  18 MEM_OUT:   0 TOS:   0 COMMAND jz   \t\
-  jz 8\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359 STACK: [0,\
-  \ 18]\nDEBUG    root:machine.py:360 PC:   8 ADDR:  18 MEM_OUT:   0 TOS:   0 COMMAND\
-  \ pop  \tpop\nINFO     root:machine.py:358 TOS: 18\nINFO     root:machine.py:359\
-  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   9 ADDR:  18 MEM_OUT:   0 TOS: \
-  \ 18 COMMAND hlt  \thlt\nINFO     root:machine.py:367 output_buffer: 'Hello, world!\
-  \ \\n'"
+out_log: "DEBUG   machine:simulation    PC:   0 ADDR:   3 MEM_OUT:  72 TOS:   0 COMMAND\
+  \ push  \tpush 3\nINFO    machine:decode_and_execute_instruction Instruction has\
+  \ operand: 3\nINFO    machine:simulation    TOS: 3\nINFO    machine:simulation \
+  \   STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   3 MEM_OUT:  72 TOS:\
+  \   3 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 3\nINFO    machine:simulation\
+  \    STACK: [0, 3]\nDEBUG   machine:simulation    PC:   2 ADDR:   3 MEM_OUT:  72\
+  \ TOS:   3 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 3\nINFO\
+  \    machine:simulation    TOS: 72\nINFO    machine:simulation    STACK: [0, 3]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   3 MEM_OUT:  72 TOS:  72 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 72\nINFO    machine:simulation  \
+  \  STACK: [0, 3]\nDEBUG   machine:simulation    PC:   4 ADDR:   3 MEM_OUT:  72 TOS:\
+  \  72 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 72\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: '' << 'H'\nINFO    machine:simulation    TOS: 72\nINFO    machine:simulation\
+  \    STACK: [0, 3]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS:  72 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 3\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   3 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 4\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   4 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 4\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   4 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 4\nINFO    machine:simulation\
+  \    STACK: [0, 4]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   4 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 4\nINFO\
+  \    machine:simulation    TOS: 101\nINFO    machine:simulation    STACK: [0, 4]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   4 MEM_OUT: 101 TOS: 101 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 101\nINFO    machine:simulation \
+  \   STACK: [0, 4]\nDEBUG   machine:simulation    PC:   4 ADDR:   4 MEM_OUT: 101\
+  \ TOS: 101 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 101\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'H' << 'e'\nINFO    machine:simulation    TOS: 101\nINFO    machine:simulation\
+  \    STACK: [0, 4]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS: 101 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 4\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   4 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   5 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   5 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: [0, 5]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   5 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 5\nINFO\
+  \    machine:simulation    TOS: 108\nINFO    machine:simulation    STACK: [0, 5]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   5 MEM_OUT: 108 TOS: 108 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 108\nINFO    machine:simulation \
+  \   STACK: [0, 5]\nDEBUG   machine:simulation    PC:   4 ADDR:   5 MEM_OUT: 108\
+  \ TOS: 108 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 108\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'He' << 'l'\nINFO    machine:simulation    TOS: 108\nINFO    machine:simulation\
+  \    STACK: [0, 5]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS: 108 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 5\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   5 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 6\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   6 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 6\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   6 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 6\nINFO    machine:simulation\
+  \    STACK: [0, 6]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   6 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 6\nINFO\
+  \    machine:simulation    TOS: 108\nINFO    machine:simulation    STACK: [0, 6]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   6 MEM_OUT: 108 TOS: 108 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 108\nINFO    machine:simulation \
+  \   STACK: [0, 6]\nDEBUG   machine:simulation    PC:   4 ADDR:   6 MEM_OUT: 108\
+  \ TOS: 108 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 108\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hel' << 'l'\nINFO    machine:simulation    TOS: 108\nINFO    machine:simulation\
+  \    STACK: [0, 6]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS: 108 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 6\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   6 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 7\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   7 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 7\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   7 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 7\nINFO    machine:simulation\
+  \    STACK: [0, 7]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   7 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 7\nINFO\
+  \    machine:simulation    TOS: 111\nINFO    machine:simulation    STACK: [0, 7]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   7 MEM_OUT: 111 TOS: 111 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 111\nINFO    machine:simulation \
+  \   STACK: [0, 7]\nDEBUG   machine:simulation    PC:   4 ADDR:   7 MEM_OUT: 111\
+  \ TOS: 111 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 111\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hell' << 'o'\nINFO    machine:simulation    TOS: 111\nINFO    machine:simulation\
+  \    STACK: [0, 7]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS: 111 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 7\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   7 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   8 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   8 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   8 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 8\nINFO\
+  \    machine:simulation    TOS: 44\nINFO    machine:simulation    STACK: [0, 8]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   8 MEM_OUT:  44 TOS:  44 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 44\nINFO    machine:simulation  \
+  \  STACK: [0, 8]\nDEBUG   machine:simulation    PC:   4 ADDR:   8 MEM_OUT:  44 TOS:\
+  \  44 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 44\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello' << ','\nINFO    machine:simulation    TOS: 44\nINFO    machine:simulation\
+  \    STACK: [0, 8]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS:  44 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 8\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   8 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 9\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   9 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 9\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   9 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 9\nINFO    machine:simulation\
+  \    STACK: [0, 9]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:   0\
+  \ TOS:   9 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 9\nINFO\
+  \    machine:simulation    TOS: 32\nINFO    machine:simulation    STACK: [0, 9]\n\
+  DEBUG   machine:simulation    PC:   3 ADDR:   9 MEM_OUT:  32 TOS:  32 COMMAND jz\
+  \   \tjz 8\nINFO    machine:simulation    TOS: 32\nINFO    machine:simulation  \
+  \  STACK: [0, 9]\nDEBUG   machine:simulation    PC:   4 ADDR:   9 MEM_OUT:  32 TOS:\
+  \  32 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 32\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello,' << ' '\nINFO    machine:simulation    TOS: 32\nINFO    machine:simulation\
+  \    STACK: [0, 9]\nDEBUG   machine:simulation    PC:   5 ADDR:   1 MEM_OUT:   0\
+  \ TOS:  32 COMMAND pop  \tpop\nINFO    machine:simulation    TOS: 9\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:\
+  \   9 COMMAND inc  \tinc\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:\
+  \  10 COMMAND jmp  \tjmp 1\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [0]\nDEBUG   machine:simulation    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:\
+  \  10 COMMAND dup  \tdup\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [0, 10]\nDEBUG   machine:simulation    PC:   2 ADDR:   1 MEM_OUT:  \
+  \ 0 TOS:  10 COMMAND ld   \tld\nINFO    machine:get_char      data_address: 10\n\
+  INFO    machine:simulation    TOS: 119\nINFO    machine:simulation    STACK: [0,\
+  \ 10]\nDEBUG   machine:simulation    PC:   3 ADDR:  10 MEM_OUT: 119 TOS: 119 COMMAND\
+  \ jz   \tjz 8\nINFO    machine:simulation    TOS: 119\nINFO    machine:simulation\
+  \    STACK: [0, 10]\nDEBUG   machine:simulation    PC:   4 ADDR:  10 MEM_OUT: 119\
+  \ TOS: 119 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 119\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello, ' << 'w'\nINFO    machine:simulation    TOS: 119\nINFO   \
+  \ machine:simulation    STACK: [0, 10]\nDEBUG   machine:simulation    PC:   5 ADDR:\
+  \   1 MEM_OUT:   0 TOS: 119 COMMAND pop  \tpop\nINFO    machine:simulation    TOS:\
+  \ 10\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation    PC:\
+  \   6 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 11\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 11\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 11\nINFO    machine:simulation    STACK: [0, 11]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 11\nINFO    machine:simulation    TOS: 111\nINFO    machine:simulation\
+  \    STACK: [0, 11]\nDEBUG   machine:simulation    PC:   3 ADDR:  11 MEM_OUT: 111\
+  \ TOS: 111 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 111\nINFO   \
+  \ machine:simulation    STACK: [0, 11]\nDEBUG   machine:simulation    PC:   4 ADDR:\
+  \  11 MEM_OUT: 111 TOS: 111 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 111\nINFO    machine:signal_wr     data_address: 1\n\
+  DEBUG   machine:signal_wr     output: 'Hello, w' << 'o'\nINFO    machine:simulation\
+  \    TOS: 111\nINFO    machine:simulation    STACK: [0, 11]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 111 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 11\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  11 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 12\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 12\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 12\nINFO    machine:simulation    STACK: [0, 12]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 12\nINFO    machine:simulation    TOS: 114\nINFO    machine:simulation\
+  \    STACK: [0, 12]\nDEBUG   machine:simulation    PC:   3 ADDR:  12 MEM_OUT: 114\
+  \ TOS: 114 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 114\nINFO   \
+  \ machine:simulation    STACK: [0, 12]\nDEBUG   machine:simulation    PC:   4 ADDR:\
+  \  12 MEM_OUT: 114 TOS: 114 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 114\nINFO    machine:signal_wr     data_address: 1\n\
+  DEBUG   machine:signal_wr     output: 'Hello, wo' << 'r'\nINFO    machine:simulation\
+  \    TOS: 114\nINFO    machine:simulation    STACK: [0, 12]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 114 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 12\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  12 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 13\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 13\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 13\nINFO    machine:simulation    STACK: [0, 13]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 13\nINFO    machine:simulation    TOS: 108\nINFO    machine:simulation\
+  \    STACK: [0, 13]\nDEBUG   machine:simulation    PC:   3 ADDR:  13 MEM_OUT: 108\
+  \ TOS: 108 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 108\nINFO   \
+  \ machine:simulation    STACK: [0, 13]\nDEBUG   machine:simulation    PC:   4 ADDR:\
+  \  13 MEM_OUT: 108 TOS: 108 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 108\nINFO    machine:signal_wr     data_address: 1\n\
+  DEBUG   machine:signal_wr     output: 'Hello, wor' << 'l'\nINFO    machine:simulation\
+  \    TOS: 108\nINFO    machine:simulation    STACK: [0, 13]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 108 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 13\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  13 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 14\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 14\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 14\nINFO    machine:simulation    STACK: [0, 14]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 14\nINFO    machine:simulation    TOS: 100\nINFO    machine:simulation\
+  \    STACK: [0, 14]\nDEBUG   machine:simulation    PC:   3 ADDR:  14 MEM_OUT: 100\
+  \ TOS: 100 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 100\nINFO   \
+  \ machine:simulation    STACK: [0, 14]\nDEBUG   machine:simulation    PC:   4 ADDR:\
+  \  14 MEM_OUT: 100 TOS: 100 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction\
+  \ Instruction has operand: 1\nINFO    machine:decode_and_execute_instruction We\
+  \ are executing ST, TOS is 100\nINFO    machine:signal_wr     data_address: 1\n\
+  DEBUG   machine:signal_wr     output: 'Hello, worl' << 'd'\nINFO    machine:simulation\
+  \    TOS: 100\nINFO    machine:simulation    STACK: [0, 14]\nDEBUG   machine:simulation\
+  \    PC:   5 ADDR:   1 MEM_OUT:   0 TOS: 100 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 14\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  14 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 15\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 15\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 15\nINFO    machine:simulation    STACK: [0, 15]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 15\nINFO    machine:simulation    TOS: 33\nINFO    machine:simulation\
+  \    STACK: [0, 15]\nDEBUG   machine:simulation    PC:   3 ADDR:  15 MEM_OUT:  33\
+  \ TOS:  33 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 33\nINFO    machine:simulation\
+  \    STACK: [0, 15]\nDEBUG   machine:simulation    PC:   4 ADDR:  15 MEM_OUT:  33\
+  \ TOS:  33 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 33\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello, world' << '!'\nINFO    machine:simulation    TOS: 33\nINFO\
+  \    machine:simulation    STACK: [0, 15]\nDEBUG   machine:simulation    PC:   5\
+  \ ADDR:   1 MEM_OUT:   0 TOS:  33 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 15\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  15 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 16\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 16\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 16\nINFO    machine:simulation    STACK: [0, 16]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 16\nINFO    machine:simulation    TOS: 32\nINFO    machine:simulation\
+  \    STACK: [0, 16]\nDEBUG   machine:simulation    PC:   3 ADDR:  16 MEM_OUT:  32\
+  \ TOS:  32 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 32\nINFO    machine:simulation\
+  \    STACK: [0, 16]\nDEBUG   machine:simulation    PC:   4 ADDR:  16 MEM_OUT:  32\
+  \ TOS:  32 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 32\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello, world!' << ' '\nINFO    machine:simulation    TOS: 32\nINFO\
+  \    machine:simulation    STACK: [0, 16]\nDEBUG   machine:simulation    PC:   5\
+  \ ADDR:   1 MEM_OUT:   0 TOS:  32 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 16\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  16 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 17\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 17\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 17\nINFO    machine:simulation    STACK: [0, 17]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 17\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [0, 17]\nDEBUG   machine:simulation    PC:   3 ADDR:  17 MEM_OUT:  10\
+  \ TOS:  10 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 10\nINFO    machine:simulation\
+  \    STACK: [0, 17]\nDEBUG   machine:simulation    PC:   4 ADDR:  17 MEM_OUT:  10\
+  \ TOS:  10 COMMAND st   \tst 1\nINFO    machine:decode_and_execute_instruction Instruction\
+  \ has operand: 1\nINFO    machine:decode_and_execute_instruction We are executing\
+  \ ST, TOS is 10\nINFO    machine:signal_wr     data_address: 1\nDEBUG   machine:signal_wr\
+  \     output: 'Hello, world! ' << '\\n'\nINFO    machine:simulation    TOS: 10\n\
+  INFO    machine:simulation    STACK: [0, 17]\nDEBUG   machine:simulation    PC:\
+  \   5 ADDR:   1 MEM_OUT:   0 TOS:  10 COMMAND pop  \tpop\nINFO    machine:simulation\
+  \    TOS: 17\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   6 ADDR:   1 MEM_OUT:   0 TOS:  17 COMMAND inc  \tinc\nINFO    machine:simulation\
+  \    TOS: 18\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   7 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND jmp  \tjmp 1\nINFO    machine:simulation\
+  \    TOS: 18\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation\
+  \    PC:   1 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND dup  \tdup\nINFO    machine:simulation\
+  \    TOS: 18\nINFO    machine:simulation    STACK: [0, 18]\nDEBUG   machine:simulation\
+  \    PC:   2 ADDR:   1 MEM_OUT:   0 TOS:  18 COMMAND ld   \tld\nINFO    machine:get_char\
+  \      data_address: 18\nINFO    machine:simulation    TOS: 0\nINFO    machine:simulation\
+  \    STACK: [0, 18]\nDEBUG   machine:simulation    PC:   3 ADDR:  18 MEM_OUT:  \
+  \ 0 TOS:   0 COMMAND jz   \tjz 8\nINFO    machine:simulation    TOS: 0\nINFO   \
+  \ machine:simulation    STACK: [0, 18]\nDEBUG   machine:simulation    PC:   8 ADDR:\
+  \  18 MEM_OUT:   0 TOS:   0 COMMAND pop  \tpop\nINFO    machine:simulation    TOS:\
+  \ 18\nINFO    machine:simulation    STACK: [0]\nDEBUG   machine:simulation    PC:\
+  \   9 ADDR:  18 MEM_OUT:   0 TOS:  18 COMMAND hlt  \thlt\nINFO    machine:simulation\
+  \    output_buffer: 'Hello, world! \\n'"
 source_code: "section .data:\n    msg: \"Hello, world! \\n\"\nsection .code:\n.start:\n\
   \    push msg\n.loop:\n    dup\n    ld\n    jz .break\n    st 1\n    pop\n    inc\n\
   \    jmp .loop\n.break:\n    pop\n.hlt:\n    hlt\n"
