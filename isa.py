@@ -36,8 +36,6 @@ class Opcode(str, Enum):
     CMP = "cmp"
     JL = "jl"
     JLE = "jle"
-    JG = "jg"
-    JGE = "jge"
     CALL = "call"
     RET = "ret"
     INC = "inc"
