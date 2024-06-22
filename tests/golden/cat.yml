@@ -1,0 +1,180 @@
+out_code_readable: "{\n    \"code\": [\n        [\n            \"0\",\n          \
+  \  \"ld\",\n            \"0\"\n        ],\n        [\n            \"1\",\n     \
+  \       \"jz\",\n            \"5\"\n        ],\n        [\n            \"2\",\n\
+  \            \"st\",\n            \"1\"\n        ],\n        [\n            \"3\"\
+  ,\n            \"pop\",\n            \"\"\n        ],\n        [\n            \"\
+  4\",\n            \"jmp\",\n            \"0\"\n        ],\n        [\n         \
+  \   \"5\",\n            \"hlt\",\n            \"\"\n        ]\n    ],\n    \"memory\"\
+  : []\n}"
+out_log: "DEBUG    root:machine.py:353 PC:   0 ADDR:   3 MEM_OUT:   0 TOS:   0 COMMAND\
+  \ ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\nDEBUG  \
+  \  root:machine.py:74 input: 's'\nINFO     root:machine.py:358 TOS: 115\nINFO  \
+  \   root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR: \
+  \  0 MEM_OUT:   0 TOS: 115 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 115\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 115 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 115\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: '' << 's'\nINFO     root:machine.py:358 TOS: 115\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 115\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'm'\nINFO     root:machine.py:358 TOS: 109\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 109 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 109\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 109 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 109\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 's' << 'm'\nINFO     root:machine.py:358 TOS: 109\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 109\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'a'\nINFO     root:machine.py:358 TOS: 97\nINFO\
+  \     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS:  97 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 97\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS:  97 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 97\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'sm' << 'a'\nINFO     root:machine.py:358 TOS: 97\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: \
+  \ 97 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'l'\nINFO     root:machine.py:358 TOS: 108\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 108 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 108\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 108 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 108\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'sma' << 'l'\nINFO     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 108\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'l'\nINFO     root:machine.py:358 TOS: 108\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 108 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 108\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 108 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 108\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smal' << 'l'\nINFO     root:machine.py:358 TOS: 108\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 108\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'P'\nINFO     root:machine.py:358 TOS: 80\nINFO\
+  \     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS:  80 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 80\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS:  80 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 80\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'small' << 'P'\nINFO     root:machine.py:358 TOS: 80\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: \
+  \ 80 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'i'\nINFO     root:machine.py:358 TOS: 105\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 105 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 105\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 105 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 105\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smallP' << 'i'\nINFO     root:machine.py:358 TOS: 105\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 105\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'p'\nINFO     root:machine.py:358 TOS: 112\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 112 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 112\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 112 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 112\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smallPi' << 'p'\nINFO     root:machine.py:358 TOS: 112\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 112\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'e'\nINFO     root:machine.py:358 TOS: 101\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 101 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 101\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 101 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 101\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smallPip' << 'e'\nINFO     root:machine.py:358 TOS: 101\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 101\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: 'r'\nINFO     root:machine.py:358 TOS: 114\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS: 114 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 114\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS: 114 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 114\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smallPipe' << 'r'\nINFO     root:machine.py:358 TOS: 114\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1 MEM_OUT:   0 TOS: 114\
+  \ COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: []\nDEBUG    root:machine.py:360 PC:   0 ADDR:   1 MEM_OUT:   0 TOS:  \
+  \ 0 COMMAND ld   \tld 0\nINFO     root:machine.py:250 Instruction has operand: 0\n\
+  DEBUG    root:machine.py:74 input: '\\n'\nINFO     root:machine.py:358 TOS: 10\n\
+  INFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:\
+  \   0 MEM_OUT:   0 TOS:  10 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS:\
+  \ 10\nINFO     root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:\
+  \   2 ADDR:   0 MEM_OUT:   0 TOS:  10 COMMAND st   \tst 1\nINFO     root:machine.py:250\
+  \ Instruction has operand: 1\nINFO     root:machine.py:269 We are executing ST,\
+  \ TOS is 10\nINFO     root:machine.py:80 data_address: 1\nDEBUG    root:machine.py:83\
+  \ output: 'smallPiper' << '\\n'\nINFO     root:machine.py:358 TOS: 10\nINFO    \
+  \ root:machine.py:359 STACK: [0]\nDEBUG    root:machine.py:360 PC:   3 ADDR:   1\
+  \ MEM_OUT:   0 TOS:  10 COMMAND pop  \tpop\nINFO     root:machine.py:358 TOS: 0\n\
+  INFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360 PC:   4 ADDR:\
+  \   1 MEM_OUT:   0 TOS:   0 COMMAND jmp  \tjmp 0\nINFO     root:machine.py:358 TOS:\
+  \ 0\nINFO     root:machine.py:359 STACK: []\nDEBUG    root:machine.py:360 PC:  \
+  \ 0 ADDR:   1 MEM_OUT:   0 TOS:   0 COMMAND ld   \tld 0\nINFO     root:machine.py:250\
+  \ Instruction has operand: 0\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   1 ADDR:   0 MEM_OUT:   0 TOS: \
+  \  0 COMMAND jz   \tjz 5\nINFO     root:machine.py:358 TOS: 0\nINFO     root:machine.py:359\
+  \ STACK: [0]\nDEBUG    root:machine.py:360 PC:   5 ADDR:   0 MEM_OUT:   0 TOS: \
+  \  0 COMMAND hlt  \thlt\nINFO     root:machine.py:367 output_buffer: 'smallPiper\\\
+  n'"
+source_code: "section .code:\n.start:\n.loop:\n    ld 0\n    jz .hlt\n    st 1\n \
+  \   pop\n    jmp .loop\n.hlt:\n    hlt\n"
+stdin: 'smallPiper
+
+  '
+stdout: '''smallPiper
+
+  ''
+
+  '

@@ -246,7 +246,7 @@ class ControlUnit:
         if instr.operand is not None:
             if self.decode_and_execute_control_flow_instruction(opcode, int(instr.operand)):
                 return
-        if not self.is_control_flow_instruction(opcode):
+            if not self.is_control_flow_instruction(opcode):
                     logging.info("Instruction has operand: %s", instr.operand)
                     self.data_path.signal_data_push()
                     self.data_path.signal_latch_tos(int(instr.operand))
