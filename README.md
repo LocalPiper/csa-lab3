@@ -117,6 +117,7 @@ label_addr:
 * `operand` - операнд (адреса, значения, метки)
 * `none` - без операнда
 
+Если операнд не указан, в качестве него будет использоваться значение на вершине стека.
 ## ISA
 
 
@@ -294,8 +295,8 @@ HLT         none     - останавливает тактовый генера�
 ## Статистика
 ```text
 | ФИО                         | алг        | LoC | code инстр. | инстр. | вариант                                                                |
-| Сорокин Артем Николаевич | hello user | 51  | 28          | 413    | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
-| Сорокин Артем Николаевич| cat        | 11  | 6          | 62    | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
-| Сорокин Артем Николаевич | hello world| 17  | 10          | 110    | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
-| Сорокин Артем Николаевич| prob2      | 42  | 29          | 83     | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
+| Сорокин Артем Николаевич    | hello user | 51  | 28          | 413    | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
+| Сорокин Артем Николаевич    | cat        | 11  | 6           | 62     | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
+| Сорокин Артем Николаевич    | hello world| 17  | 10          | 110    | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
+| Сорокин Артем Николаевич    | prob2      | 42  | 29          | 83     | asm | stack | harv | hw | instr | struct | stream | mem | cstr | prob2 |
 ```
