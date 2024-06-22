@@ -96,7 +96,7 @@ def translate_command(line, variables, labels):
 
     if len(parts)  < 2:
         return Command(opcode)
-    
+
     if is_integer(parts[1]):
         value = int(parts[1])
     else:
@@ -108,7 +108,7 @@ def translate_command(line, variables, labels):
             else:
                 value = parts[1]
     return Command(opcode, value)
-    
+
 
 
 def translate_section_text_stage_2(section_text, variables, labels):
